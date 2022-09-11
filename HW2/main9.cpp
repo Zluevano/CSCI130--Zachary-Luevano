@@ -12,16 +12,20 @@ Equation = (y2 - y1)/(x2 - x1) = m
 using namespace std;
 int main ()
 {
-// Initalize Variables
-  
+// Name of Program
   cout << setw(40) << "Calculating Slopes" << endl;
+
+// Initalize Variables
+cout << setprecision(5) << fixed;
   
   int x_1, x_2;
   int y_1, y_2;
   double m;
+  double x;
+  double y;
 
   
-  // Prompt user for inputs
+// Prompt user for inputs
   cout << "To Calculate the slope of two lines you need the ∆X and ∆Y" <<
   "\nEnter the first X point and then the second X as whole numbers." << endl;
 
@@ -29,20 +33,25 @@ int main ()
     cin >> x_1;
     cin >> x_2;
 
-  cout <<"\n Now enter the first Y point and then the second Y as whole numbers." << endl;
+  cout <<"\nNow enter the first Y point and then the second Y as whole numbers." << endl;
 
-    // Acquire y Values
+// Acquire y Values
     cin >> y_1;
-    cin >> y_1;
+    cin >> y_2;
 
-  // Prompts formula to user
-  cout << setw(40) << "\nUsing the formula (y2-y1)/(x2-x1) to find the slope m" << endl;
-    
+// Prompts formula to user
+  cout << "\nUsing the formula (y2-y1)/(x2-x1) to find the slope m" << endl;
+
+  // Perform calculations
+  y = (y_2) - (y_1); // Calculate Delta y
+  cout << setw(35) << " ∆y = " << y << endl; //Display Delta y
+  x = (x_2) - (x_1); // Calculate Delta x
+  cout << setw(35) << " ∆x = " << x << endl; // Display Delta x
+
+  cout << endl; // Add Space
   
+  m = (y / x);
+  cout << "The resulting slope is:  " << endl << setw(35) << "M = " << m << endl;
 
-
-
-
-
-  
+return 0;
 }
