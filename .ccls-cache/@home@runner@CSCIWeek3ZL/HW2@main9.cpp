@@ -1,10 +1,13 @@
+
 /*
+Programmer: Zachary Luevano
+Date Finished : 9/11/2022
+Course: CSCI 130
 
-
+Description: Simply calculates the slope from a delta x and delta y
 
 Equation = (y2 - y1)/(x2 - x1) = m
-*/ 
-
+*/
 #include <iostream>
 #include <cmath>
 #include <iomanip>

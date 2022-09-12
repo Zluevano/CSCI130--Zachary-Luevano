@@ -1,4 +1,10 @@
 /*
+Programmer: Zachary Luevano
+Date Finished : 9/11/2022
+Course: CSCI 130
+
+Description: Calculates the value of an amperage using the following equation:
+
 i = (E/R) e^*(-t/RC)
 */
 #include <iostream>

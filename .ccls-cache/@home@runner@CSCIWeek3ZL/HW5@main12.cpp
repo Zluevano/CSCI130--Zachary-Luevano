@@ -1,3 +1,12 @@
+/*
+Programmer: Zachary Luevano
+Date Finished : 9/11/2022
+Course: CSCI 130
+
+Description: Takes two values a and b and organizes them from smallest to largest
+The Kattis program was not exact as it didn't specify conditions if A = B
+*/
+
 #include <iostream>
 using namespace std;
 int main()
@@ -15,7 +24,7 @@ int main()
   cout << b << " " << a << endl;
 
     else if (a == b)
-  cout << "Try again" << endl;
+  cout << a << " " << b << endl;
       
   else
     cout << "Try again" << endl;

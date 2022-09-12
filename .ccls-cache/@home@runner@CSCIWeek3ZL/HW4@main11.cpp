@@ -1,3 +1,10 @@
+/*
+Programmer: Zachary Luevano
+Date Finished : 9/11/2022
+Course: CSCI 130
+
+Description: Calculates two areas one with cheese to the base or in then case the pizza
+*/
 #include <iostream>
 #include <cmath>
 #include <iomanip>
