@@ -1,6 +1,5 @@
 #include <iostream>
 using namespace std;
-
 int main ()
 {
 //Declare Variables:
@@ -23,6 +22,5 @@ int main ()
 
   else
     cout << endl << "Try again" << endl;
-
   return 0;
 }
