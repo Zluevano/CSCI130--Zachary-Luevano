@@ -8,18 +8,17 @@ int main()
   cin >> a >> b;
   cout << endl; 
 
-  if 
-      ((a < b) && (a >= 0) && (b <= 1000000))
+    if ((a < b) && (a >= 0) && (b <= 1000000))
   cout << a << " " << b << endl;  
 
-  else if
-     ((b < a) && (b >= 0) && (a <= 1000000))
+    else if ((b < a) && (b >= 0) && (a <= 1000000))
   cout << b << " " << a << endl;
-    
-  else if
-      (a == b)
-  cout << "Try again" << endl;
 
+    else if (a == b)
+  cout << "Try again" << endl;
+      
   else
-    cout << "Try again " << endl;
+    cout << "Try again" << endl;
+
+return 0;
 }
