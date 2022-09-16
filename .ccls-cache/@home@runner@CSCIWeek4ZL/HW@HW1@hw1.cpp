@@ -6,24 +6,43 @@ using namespace std;
 int main(){
 int a;
 int b;
-bool FLAG_Result = true;
+int c;
+int d;
+int e;
+bool r; //Result bool gives a 0 or 1.
+int re;
+  
+  
+  a = 5; 
+  b = 2;
+  c = 4;
+  d = 6;
+  e = 3;
+  
 
 
+// Code is read left to right on line
+//r = (a > b); A 1
+  
+//r = (a != b); B 1
+  
+//r = ((d % b) == (c & b)); C 1
+  
+//r = ((a * c) != (d * b)); D 1
+  
+//r = ((d * b) (c * b)); E 0
 
-  while (FLAG_Result == true){
-    cout << "\nEnter A and then B:" << endl;
-      cin >> a;
-      cin >> b;
+//r = !(a *b); F 0
 
-  if (a > b)
-    cout << "a = " << a << " is greather than b =  " << b << endl;
-  else if (a == b)
-    cout << "a = " << a << " is equal to " << b << endl;
-    
-  else {
-    cout << "That's it! " << a << " is less than " << b << endl;
-    FLAG_Result = false;
-    
-      }
-    }
-  }
+//r = !(a % b * c); G 0
+  
+//r = !(c % b * a); H 1
+
+r = (b % c * a); // I 1
+re = r;
+
+  
+cout << r << endl;
+  cout << endl;
+cout << re << endl;
+}
