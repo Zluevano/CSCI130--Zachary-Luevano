@@ -1,3 +1,10 @@
+/*
+Programmer: Zachary Luevano
+Date Finished : 9/15/2022
+Course: CSCI 130
+
+Description: Simply uses a bool (r) to evalute several cases as laid out in the book.
+*/
 #include <iostream>
 #include <cmath>
 
