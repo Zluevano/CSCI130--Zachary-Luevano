@@ -3,7 +3,7 @@ Programmer: Zachary Luevano
 Date Finished : 9/16/2022
 Course: CSCI 130
 
-Description: Really what this does is add a number N amount of times, each time it adds it takes 1 away. At the end it adds one back to the sum.
+Description: Somewhat harder to program, thank goodness for that help on Friday, what this does is you enter a number that is the number of test cases, after that you enter however many N cases and it calculates the last digit of the factorial by doing a modulus division of 10.
 */
 
 #include <iostream>
@@ -32,9 +32,13 @@ for (int i = 0 ; i < T; i++){
   
   if (i != T)
     cout << " " << endl;
-    cout << value << endl;
     }
+  if (value <= 6)
+    cout << value % 10 << endl;
+  else
+    cout << value % 10 << endl;
   }
+  return 0;
 }
 
 
