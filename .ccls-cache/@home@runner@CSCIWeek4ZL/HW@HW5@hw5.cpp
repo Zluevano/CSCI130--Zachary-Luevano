@@ -1,3 +1,18 @@
+/*
+Programmer: Zachary Luevano
+Date Finished : 9/17/2022
+Course: CSCI 130
+
+Description: Performs two physics equations first is 
+X = V0(t)(cos)(theta)) rewritten to find t.
+Y = V(t) = V0(t)(sin(theta))-(1/2)(g)(t)^2
+
+Consists of an input of velocity (v0), deg (Degree, x (Distance to target), h1(Height of wall from bottom to hole), h2(height of wall from top to bottom)
+I also used several other variables: degr is the conversion of degrees into radians for C++, yt is simply the height at the end of the Y = equations, g is used at = 9.81, and lastly timex is used for finding time from x.
+
+The ball being launched needs to have a 1.0 gap from the top of the wall and 1.0 gap from the bottom, this simply results in the height being added +1 for the top (h2) and -1 for the bottom (h1).
+*/
+
 #include <iostream>
 #include <cmath>
 
@@ -11,8 +26,7 @@ float deg; // Degree of launch
 float x; // Distance to wall
 float h1; //Lower portion of wall ------
 float h2; //Upper portion of wall           ------ Fit between this gap
-float cosx;
-
+float degr; // Degrees to radians
 float yt; //Declare y position
 float g = 9.81; //Gravity constant
 
@@ -28,23 +42,22 @@ cin >> N;
   // Input velocity, angle, x distance, lower height of wall, upper height of wall
   cin >> v0 >> deg >> x >> h1 >> h2;
 
-cosx = cos(deg);
-    
-  timex = x / (v0 * cosx);
-  //timex = ((x) / (v0 * (cos(deg))));
-cout << timex << endl;
-    
-  yt = (((v0 * timex) * sin(deg))) - ((1/2 * g) * pow(timex, 2));
-cout << yt << endl;
+deg = (deg * (3.141592/180));   
+timex = x / (v0 * cos(deg));
+
+//tsqr = (pow(timex, 2));
+
+    yt = (v0 * timex * sin(deg) - (0.5 * g * (pow(timex, 2))));  
+//  yt = ((v0 * timex * sin(degr))) - ((1/2 * g) * tsqr);
     
 //  if (i + 1 != N)
 //    cout << " " << endl;
     
     if  ((yt < h2-1) && (yt > h1+1)) 
-      cout << " safe " << endl;
+      cout << "Safe" << endl;
       
     else
-      cout << " unsafe " << endl;
+      cout << "Not Safe" << endl;
  
 
   
